@@ -1,8 +1,7 @@
-
-//Find the "Kth" max and min element of an array 
+//Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
 import java.util.*;
 
-class Q3 {
+class Q4_Sortwithoutalgo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of the array");
@@ -22,10 +21,10 @@ class Q3 {
                 }
             }
         }
-        System.out.println("Enter the kth element u want to find");
-        int k = sc.nextInt();
-        System.out.println(k + " Minimum element is " + arr[k - 1]);
-        System.out.println(k + " Maximum element is " + arr[(n - k)]);
+        System.out.println("Sorted Array");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
         sc.close();
     }
 }
